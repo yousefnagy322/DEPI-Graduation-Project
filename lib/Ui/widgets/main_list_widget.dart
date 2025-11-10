@@ -28,7 +28,11 @@ class MainListWidget extends StatelessWidget {
               children: [
                 Text(
                   'Weekly Groceries',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+                  style: TextStyle(
+                    fontFamily: 'PlusJakartaSans',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
               ],
             ),

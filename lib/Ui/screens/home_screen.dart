@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
         title: Text(
           'My Shopping Lists',
           style: TextStyle(
+            fontFamily: 'PlusJakartaSans',
             color: Color(0xff333333),
             fontSize: 20,
             fontWeight: FontWeight.w700,
