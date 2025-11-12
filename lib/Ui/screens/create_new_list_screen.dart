@@ -1,3 +1,4 @@
+import 'package:collaborativeshoppinglistapp/Core/utils/app_styles.dart';
 import 'package:collaborativeshoppinglistapp/Ui/widgets/create_newList_screen_body.dart';
 import 'package:flutter/material.dart';
 
@@ -8,9 +9,9 @@ class CreateNewListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: ,
+        title:Center(child: Text("Create New List",style: AppStyles.styleBold18,)),
       ),
-      body:const CreateNewlistScreenBody(),
+      body: CreateNewlistScreenBody(),
     );
   }
 }

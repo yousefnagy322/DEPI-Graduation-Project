@@ -1,3 +1,4 @@
+import 'package:collaborativeshoppinglistapp/Ui/screens/create_new_list_screen.dart';
 import 'package:collaborativeshoppinglistapp/Ui/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class Testscreen extends StatelessWidget {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => HomeScreen()),
+            MaterialPageRoute(builder: (context) => CreateNewListScreen()),
           );
         },
         child: Text('click me :D', style: TextStyle(color: Colors.white)),
