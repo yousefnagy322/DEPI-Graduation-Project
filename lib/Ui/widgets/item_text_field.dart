@@ -14,6 +14,7 @@ class ItemTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       controller: itemController,
+      onSubmitted: (_) => onAddPressed(),
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.symmetric(horizontal: 17, vertical: 17),
         filled: true,
@@ -25,10 +26,13 @@ class ItemTextField extends StatelessWidget {
           onTap: onAddPressed,
           borderRadius: BorderRadius.circular(16),
           child: Container(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
               color: const Color(0xff49B94D),
-              borderRadius: BorderRadius.only(bottomRight: Radius.circular(10),topRight: Radius.circular(10)),
+              borderRadius: const BorderRadius.only(
+                bottomRight: Radius.circular(10),
+                topRight: Radius.circular(10),
+              ),
             ),
             child: const Icon(Icons.add, color: Colors.white),
           ),
