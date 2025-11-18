@@ -1,6 +1,7 @@
 import 'package:collaborativeshoppinglistapp/Core/colors_manager.dart';
 import 'package:collaborativeshoppinglistapp/Logic/HomeScreen/cubit.dart';
 import 'package:collaborativeshoppinglistapp/Logic/HomeScreen/state.dart';
+import 'package:collaborativeshoppinglistapp/Ui/screens/create_new_list_screen.dart';
 import 'package:collaborativeshoppinglistapp/Ui/widgets/main_list_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,7 +24,12 @@ class HomeScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(24),
           ),
           backgroundColor: Color(0xff4BBE4F),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => CreateNewListScreen()),
+            );
+          },
           child: Icon(Icons.add, color: Colors.white),
         ),
         appBar: AppBar(

@@ -13,7 +13,7 @@ class Testscreen extends StatelessWidget {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => CreateNewListScreen()),
+            MaterialPageRoute(builder: (context) => HomeScreen()),
           );
         },
         child: Text('click me :D', style: TextStyle(color: Colors.white)),
